@@ -1,0 +1,18 @@
+class Node{
+    int data;
+    Node next=null;
+    Node(int data){
+        this.data=data;
+    }
+}
+public class LinkedList{
+    public static void main(String[] args){
+        Node a=new Node(25);
+        System.out.println(a.data);
+        System.out.println(a.next);
+        Node b=new Node(50);
+        a.next=b;
+        System.out.println(b.data);
+        System.out.println(a.next.data);
+    }
+}
